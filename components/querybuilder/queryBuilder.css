@@ -1,0 +1,75 @@
+.flex-box-outer {
+  padding: 20px;
+}
+.flex-box {
+  display: flex;
+}
+.flex-box > * {
+  flex: 1;
+}
+.shrink {
+  flex: 0 1 auto;
+}
+.query-log {
+  font-family: Consolas, "Courier New", monospace;
+  white-space: nowrap;
+  max-width: 400px;
+  margin-left: 2rem;
+}
+.rule-group .rule-group {
+  margin-left: 0.5rem;
+}
+.rule {
+  padding: 0.5rem 0;
+}
+.rule-group {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: rgba(8, 92, 175, 0.1);
+  position: relative;
+}
+
+.rule-bock {
+  position: relative;
+  padding-left: 20px;
+}
+.line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.line-inner {
+  border-left: 1px solid #32363a;
+  height: 100%;
+  margin: 0 10px;
+}
+.line-horizontal {
+  position: absolute;
+  height: 1px;
+  width: 200px;
+  background: #32363a;
+  top: 30px;
+  left: 10px;
+}
+.line.last-child {
+  height: 30px;
+}
+.line2 {
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  background: black;
+  width: 1;
+  left: 2px;
+}
+.line2.last-empty-group {
+  height: 30px;
+}
+.line2 .line-horizontal {
+  left: 0;
+}
+.control-group {
+  padding-top: 5px;
+}
